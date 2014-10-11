@@ -61,4 +61,3 @@ group :production do
 end
 
 gem "slim-rails"
-gem "newrelic_rpm"
