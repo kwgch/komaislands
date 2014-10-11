@@ -62,3 +62,4 @@ end
 
 gem "slim-rails"
 gem 'circleci_notify', group: [:development, :test]
+gem 'foundation-rails'
