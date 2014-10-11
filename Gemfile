@@ -61,5 +61,5 @@ group :production do
 end
 
 gem "slim-rails"
-gem 'circleci_notify', group: [:development, :test]
+gem 'circleci_notify'
 gem 'foundation-rails'
