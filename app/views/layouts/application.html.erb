@@ -5,7 +5,7 @@
     <meta name="author" content="kmaislands">
     <meta name="description" content="私のすばらしい狭い島を紹介します">
     <meta name="keywords" content="狭い島,広島">
-    >meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title><%= content_for?(:title) ? yield(:title) : "私の狭い島" %></title>
 
@@ -19,5 +19,22 @@
       <%= yield %>
       <%= javascript_include_tag "application" %>
     </div>
+
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr>
+        <div class="row">
+          <div class="large-6 columns">
+            <p>© Copyright Komaislands</p>
+          </div>
+          <div class="large-6 columns">
+            <ul class="inline-list right">
+              <li><a href="http://www.pref.hiroshima.lg.jp/">広島県</a></li>
+              <li><a href="https://www.pref.hiroshima.lg.jp/site/innovation/hackathon1011.html">レッドハッカソン</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
