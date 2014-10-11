@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="author" content="kmaislands">
+    <meta name="description" content="私のすばらしい狭い島を紹介します">
+    <meta name="keywords" content="狭い島,広島">
+    >meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "私の狭い島" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -12,8 +15,9 @@
   </head>
 
   <body>
-
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
+    <div class="wrap-main">
+      <%= yield %>
+      <%= javascript_include_tag "application" %>
+    </div>
   </body>
 </html>

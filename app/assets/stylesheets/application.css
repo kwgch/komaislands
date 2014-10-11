@@ -15,3 +15,7 @@
  *= require foundation_and_overrides
 
  */
+
+.main-image {
+    margin: 0 0 2em 0;
+}
