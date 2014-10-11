@@ -64,3 +64,5 @@ gem "slim-rails"
 gem 'circleci_notify'
 gem 'foundation-rails'
 gem 'active_hash'
+
+gem "font-awesome-rails"
