@@ -43,6 +43,10 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    chatwork (0.0.5)
+      faraday (~> 0.9.0)
+    circleci_notify (0.0.1)
+      chatwork (~> 0.0.5)
     cliver (0.3.2)
     coderay (1.1.0)
     coffee-rails (4.0.1)
@@ -57,6 +61,8 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.1)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
     hike (1.2.3)
     i18n (0.6.11)
     interception (0.5)
@@ -74,6 +80,7 @@ GEM
     mini_portile (0.6.0)
     minitest (5.4.2)
     multi_json (1.10.1)
+    multipart-post (2.0.0)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     pg (0.17.1)
@@ -193,6 +200,7 @@ DEPENDENCIES
   awesome_print
   bullet
   capybara
+  circleci_notify
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails

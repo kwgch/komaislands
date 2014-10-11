@@ -4,4 +4,8 @@ machine:
 deployment:
   staging:
     branch: master
-    heroku: komaislands
+    commands:
+      - git push git@heroku.com:foo-bar-123.git $CIRCLE_SHA1:refs/heads/master
+      - heroku run rake db:migrate --app komaislands:
+          timeout: 400 # if your deploys take a long time
+      - bundle exec rake bin/circleci_notify "サイトを更新しました"
