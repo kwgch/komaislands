@@ -1,12 +1,6 @@
 Rails.application.routes.draw do
-  get 'spots/index'
-
-  get 'spots/show'
-
-  get 'islands/index'
-
-  get 'islands/show'
-
+  resources "spots"
+  resources "islands"
   root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

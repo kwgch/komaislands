@@ -1,2 +1,5 @@
-h1 Islands#index
-p Find me in app/views/islands/index.html.slim
+h1 島一覧
+
+- @islands.each do |island|
+  h2
+    = link_to island.name, island

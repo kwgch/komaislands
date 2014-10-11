@@ -3,5 +3,6 @@ class SpotsController < ApplicationController
   end
 
   def show
+    @spot = Spot.find(1)
   end
 end

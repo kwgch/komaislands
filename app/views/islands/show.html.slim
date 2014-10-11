@@ -1,2 +1,6 @@
-h1 Islands#show
-p Find me in app/views/islands/show.html.slim
+h1= @island.name
+
+ul
+  - @spots.each do |spot|
+    li
+      = link_to spot.description, spot
