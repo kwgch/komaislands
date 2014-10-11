@@ -4,3 +4,12 @@ ul
   - @spots.each do |spot|
     li
       = link_to spot.description, spot
+
+= link_to "#{@island.name}へいく", {}, class: 'button'
+
+h2  食べ物情報
+ul
+  li 牡蠣がうまい
+  li さしみがうまい
+
+= link_to "#{@island.name}へいく", {}, class: 'button'
